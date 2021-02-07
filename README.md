@@ -19,6 +19,7 @@
 - 📽 Automatic lowest possible resolution settings
 - 🧰 Highly customizable codebase
 - 📦 Deployable to VPS by docker
+- ✅ Watches Streams of Streamers who are qualified for R6 Twitch drops (incomplete  list)
 - 🏳️ Helpful support community
 - 💬 Multi language readme: [🇫🇷 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_FR.md) [🇧🇷 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_PT.md) [🇷🇺 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_RU.md) [🇸🇰 README](https://github.com/D3vl0per/Valorant-watcher/blob/languages/README_SK.md)
 
@@ -133,3 +134,10 @@ This code is for educational and research purposes only.
 Do not attempt to violate the law with anything contained here.
 I will not be responsible for any illegal actions.
 Reproduction and copy is authorised, provided the source is acknowledged.
+
+## Twitch watcher Rainbow6 Disclaimer
+I basically did nothing but changing a link and adding an if-condition to a for-loop.
+As such I would like to thank https://github.com/D3vl0per for their amazingly clean and well Doccumented code That allowed me to configure
+the program as I needed, even though I have not worked with JavaScript before ( May this be a starting point :) ).
+
+
