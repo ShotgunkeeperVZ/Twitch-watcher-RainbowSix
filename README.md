@@ -1,9 +1,9 @@
 
 
 
-<h1 align="center">Twitch watcher R6-2021</h1>
+<h1 align="center">Twitch watcher Rainbow6 h1>
 <p align="center"> I spent two days watching Valorant streams to get a drop. I got bored...</p>
-<p align="center" style="color:blue;font-size:9px;"> I did that for R6 drops :D</p>
+<p align="center"; style="color:blue; font-size:9px;"> I did that for R6 drops :D</p>
 <p align="center">
 <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/D3vl0per/Valorant-watcher"> <img alt="GitHub" src="https://img.shields.io/github/repo-size/D3vl0per/Valorant-watcher"> <img alt="GitHub repo size" src="https://img.shields.io/github/license/D3vl0per/Valorant-watcher"> <img alt="GitHub issues" src="https://img.shields.io/github/issues/D3vl0per/Valorant-watcher"> <a href="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf" target="_blank"><img src="https://asciinema.org/a/rob4Rh1EG4XFVfN4XWK67JSnf.svg" /></a>
 </p>
