@@ -1,7 +1,7 @@
 
 
 
-<h1 align="center">Twitch watcher Rainbow6 h1>
+<h1 align="center">Twitch watcher Rainbow6 </h1>
 <p align="center"> I spent two days watching Valorant streams to get a drop. I got bored...</p>
 <p align="center""> I did that for R6 drops :D</p>
 <p align="center">
