@@ -15,13 +15,13 @@ const configPath = './config.json'
 const screenshotFolder = './screenshots/';
 const baseUrl = 'https://www.twitch.tv/';
 const userAgent = (process.env.userAgent || 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36');
-const streamersUrl = (process.env.streamersUrl || 'https://www.twitch.tv/directory/game/VALORANT?tl=c2542d6d-cd10-4532-919b-3d19f30a768b');
+const streamersUrl = (process.env.streamersUrl || 'https://www.twitch.tv/directory/game/Tom%20Clancy\'s%20Rainbow%20Six%20Siege');
 
 const scrollDelay = (Number(process.env.scrollDelay) || 2000);
 const scrollTimes = (Number(process.env.scrollTimes) || 5);
 
-const minWatching = (Number(process.env.minWatching) || 15); // Minutes
-const maxWatching = (Number(process.env.maxWatching) || 30); //Minutes
+const minWatching = (Number(process.env.minWatching) || 5); // Minutes
+const maxWatching = (Number(process.env.maxWatching) || 10); //Minutes
 
 const streamerListRefresh = (Number(process.env.streamerListRefresh) || 1);
 const streamerListRefreshUnit = (process.env.streamerListRefreshUnit || 'hour'); //https://day.js.org/docs/en/manipulate/add
@@ -266,9 +266,24 @@ async function getAllStreamer(page) {
   streamers = null;
   streamers = new Array();
 
+  var j = 0;
+  var dropQualifiedStreamers = 		
+
+		["pengu","jessgoat","itsspoit","ryyfyy","ksr6s","sha77etv","pacmandownunder",
+		"minimichegga","kitty_r6","snedger","justryuk","zander",
+		"lagonis","smexycake","drigg","sixquatre","mickalow","kinggeorge",
+		"maciejay","bikinibodhi"];
+
+
   console.log('🧹 Filtering out html codes...');
   for (var i = 0; i < jquery.length; i++) {
-    streamers[i] = jquery[i].attribs.href.split("/")[1];
+	if(dropQualifiedStreamers.includes(jquery[i].attribs.href.split("/")[1]))
+	{
+    	streamers[j] = jquery[i].attribs.href.split("/")[1];
+    	console.log(streamers[j]);
+    	j = j + 1;
+
+	}
   }
   return;
 }
@@ -382,6 +397,8 @@ async function main() {
   console.log('🔭 Running watcher...');
   await viewRandomPage(browser, page);
 };
+
+
 
 main();
 
